@@ -13,12 +13,12 @@ const dogSchema = new Schema({
     },
     reg_owner: {
         type: Schema.Types.ObjectId,
-        ref: "User",
+        ref: "user",
         required: [true, "Each dog must have a registered owner"]
     },
     adopt_owner: {
         type: Schema.Types.ObjectId,
-        ref: "User",
+        ref: "user",
     },
     thank_you_msg: {
         type: String,
